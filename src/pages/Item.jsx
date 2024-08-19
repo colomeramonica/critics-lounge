@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../components/Comments";
+import NavBar from "../components/NavBar";
 const apiKey = import.meta.env.VITE_THEMOVIEDB_APIKEY;
 
 export default function ItemPage() {
@@ -28,9 +29,12 @@ export default function ItemPage() {
 
   return (
     <>
-      <div className="flex flex-row w-screen h-screen p-5">
-        <div className="flex flex-row align-top">
-          <div className="flex justify-start p-5 drop-shadow">
+      <div className="flex flex-row h-screen">
+        <div className="flex w-1/2">
+          <NavBar />
+        </div>
+        <div className="flex flex-row justify-start align-top p-5">
+          <div className="flex relative justify-start py-5  px-2 top-[40px] drop-shadow">
             <img
               href="/"
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -75,7 +79,7 @@ export default function ItemPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row w-screen h-screen p-5">
+      <div className="flex flex-row w-screen h-screen mt-6 py-5 px-2">
         <Comments movieId={movieId} />
       </div>
     </>
