@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Container from '../components/Container';
+const apiKey = import.meta.env.VITE_THEMOVIEDB_APIKEY;
 
 export default function HomePage() {
 
@@ -10,7 +11,7 @@ export default function HomePage() {
     const fetchMovieReleases = async () => {
       try {
         const response = await axios.get(
-          'https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=68819b168b6b07cbbee3b3f18354190a&page=1'
+          `https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=${apiKey}&page=1`
         );
         const data = response.data.results;
         setMovieReleases(data);

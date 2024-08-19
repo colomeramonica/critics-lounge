@@ -20,7 +20,7 @@ export default function Comments() {
             Título Resenha
           </h2>
           <p className="px-2 text-slate-800 text-sm ">Escrita por Nome da pessoa</p>
-          <span className="mt-6 text-slate-800">
+          <span className="mt-6 text-slate-800 hyphens-auto">
             "Mad Max: Fury Road" é um dos meus filmes favoritos de todos os tempos, portanto, esperava ansiosamente pela prequela "Furiosa". Infelizmente, o filme parece que pegou num argumento típico de um "Fast & Furious" ou de um filme de ação genérico e aplicou um template para ficar com um visual semelhante a "Fury Road".
           </span>
         </div>

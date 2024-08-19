@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../components/Comments";
+const apiKey = import.meta.env.VITE_THEMOVIEDB_APIKEY;
 
 export default function ItemPage() {
   const { movieId } = useParams();
@@ -11,7 +12,7 @@ export default function ItemPage() {
     const fetchMovieInformation = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/movie/${movieId}?language=en-US&api_key=68819b168b6b07cbbee3b3f18354190a&page=1`
+          `https://api.themoviedb.org/3/movie/${movieId}?language=en-US&api_key=${apiKey}&page=1`
         );
         const data = response.data;
         setMovie(data);
