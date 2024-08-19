@@ -2,9 +2,10 @@ import React from 'react'
 import './App.css'
 import SignUp from './pages/SignUp'
 import { EarthoOneProvider } from '@eartho/one-client-react'
-import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import ItemPage from './pages/Item';
+import HomePage from './pages/Home';
 
 function App() {
   const onRedirectCallback = (appState) => {
@@ -31,7 +32,8 @@ function App() {
 function AppRoutes() {
   return (
     <Routes>
-      <Route exact path="/" element={<Home />} />
+      <Route exact path="/" element={<HomePage />} />
+      <Route path="/movie/:movieId" element={<ItemPage />} />
       <Route path="/login" element={<SignUp />} />
     </Routes>
   );
