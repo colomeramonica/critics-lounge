@@ -87,4 +87,4 @@ Husky is configured to run Prettier and ESLint before every commit. This ensures
 
 This project is licensed under the MIT License.
 
-![Static Badge](https://img.shields.io/badge/lets_talk-blue?style=for-the-badge&logo=linkedin&link=http%3A%2F%2Flinkedin.com%2Fin%2Fcolomeramonica)
+![Static Badge](https://img.shields.io/badge/colomeramonica-blue?style=for-the-badge&logo=linkedin)
