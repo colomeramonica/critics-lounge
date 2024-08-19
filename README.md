@@ -1,17 +1,24 @@
-# Critic's Lounge
-An app for the enjoyers of movies and tv shows. Here you catch up with the latest releases and leave your review!
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/colomeramonica/critics-lounge?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/work-in_progress-yellow?style=for-the-badge)
 
-App created to serve as a study of React, Vite and Tailwind in addition to good practices.
 
-## Features
+# 🎥 Critic's Lounge 
+![uses-themoviedb](https://github.com/user-attachments/assets/fe4e5ba2-4aed-48c4-ae68-5c8461bb0a0f)
 
-- *React + Vite*: In the latest version
-- *TailwindCSS*: Utility-first CSS framework.
-- *Jest*: For unit testing.
-- *Husky*: Git hooks to ensure code quality before commits.
-- *ESLint & Prettier*: For consistent code formatting and linting.
 
-## Getting Started
+_An app for the enjoyers of movies and tv shows. Here you catch up with the latest releases and leave your review!_
+
+> App created to serve as a study of React, Vite and Tailwind in addition to good practices.
+
+## 📋 Setup
+
+- **React + Vite**: In the latest version
+- **TailwindCSS**: Utility-first CSS framework.
+- **Jest**: For unit testing.
+- **Husky**: Git hooks to ensure code quality before commits.
+- **ESLint & Prettier**: For consistent code formatting and linting.
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -32,8 +39,9 @@ npm install
 
 To start the development server:
 
-bash
+``` bash
 npm start
+```
 
 
 This will launch the application in development mode with hot reloading.
@@ -42,9 +50,9 @@ This will launch the application in development mode with hot reloading.
 
 To create a production build:
 
-bash
+``` bash
 npm run build
-
+```
 
 The output will be in the `dist` directory, ready to be deployed.
 
@@ -52,24 +60,24 @@ The output will be in the `dist` directory, ready to be deployed.
 
 To check for linting errors:
 
-bash
+``` bash
 npm run lint
-
+```
 
 To automatically fix linting errors and format the code:
 
-bash
+``` bash
 npm run lint:fix
 npm run prettier:fix
-
+```
 
 ### Testing
 
 To run tests:
 
-bash
+``` bash
 npm test
-
+```
 
 ### Git Hooks with Husky
 
@@ -78,3 +86,5 @@ Husky is configured to run Prettier and ESLint before every commit. This ensures
 ## License
 
 This project is licensed under the MIT License.
+
+![Static Badge](https://img.shields.io/badge/colomeramonica-blue?style=for-the-badge&logo=linkedin)
