@@ -32,8 +32,9 @@ npm install
 
 To start the development server:
 
-bash
+``` bash
 npm start
+```
 
 
 This will launch the application in development mode with hot reloading.
@@ -42,9 +43,9 @@ This will launch the application in development mode with hot reloading.
 
 To create a production build:
 
-bash
+``` bash
 npm run build
-
+```
 
 The output will be in the `dist` directory, ready to be deployed.
 
@@ -52,24 +53,24 @@ The output will be in the `dist` directory, ready to be deployed.
 
 To check for linting errors:
 
-bash
+``` bash
 npm run lint
-
+```
 
 To automatically fix linting errors and format the code:
 
-bash
+``` bash
 npm run lint:fix
 npm run prettier:fix
-
+```
 
 ### Testing
 
 To run tests:
 
-bash
+``` bash
 npm test
-
+```
 
 ### Git Hooks with Husky
 
