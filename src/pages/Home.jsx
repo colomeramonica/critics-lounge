@@ -25,7 +25,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex flex-row h-screen">
+    <div className="flex flex-row h-screen w-full bg-gradient-to-tr from-slate-400 to-to-blue-950 bg-center bg-no-repeat bg-cover backdrop-blur-lg">
       <div className="flex flex-row w-1/2">
         <NavBar />
       </div>
@@ -33,7 +33,7 @@ export default function HomePage() {
         <h2 className="p-3 text-slate-800 font-bold capitalize pb-[10px] text-center text-2xl">
           Lançamentos
         </h2>
-        <div className="flex flex-row gap-3 bg-white rounded items-center justify-center">
+        <div className="flex flex-row gap-3 backdrop-filter backdrop-blur-lg bg-opacity-20 rounded items-center justify-center">
           <Container list={movieReleases} />
         </div>
       </div>

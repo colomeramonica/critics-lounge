@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../components/Comments";
 import NavBar from "../components/NavBar";
+import '../index.css';
 const apiKey = import.meta.env.VITE_THEMOVIEDB_APIKEY;
 
 export default function ItemPage() {
@@ -25,11 +26,9 @@ export default function ItemPage() {
     fetchMovieInformation();
   }, []);
 
-  console.log(movie);
-
   return (
     <>
-      <div className="flex flex-row h-screen">
+      <div className="flex flex-row h-full bg-gradient-to-tr from-slate-400 to-to-blue-950 bg-center bg-no-repeat bg-cover backdrop-blur-lg">
         <div className="flex w-1/2">
           <NavBar />
         </div>
@@ -47,7 +46,7 @@ export default function ItemPage() {
             <h2 className="title p-3 text-slate-800 font-bold capitalize pb-[10px] text-center text-3xl">
               {movie.title}
             </h2>
-            <div className="overview p-3 rounded-lg bg-slate-300 drop-shadow">
+            <div className="overview backdrop-filter backdrop-blur-lg bg-opacity-20 p-3 rounded-lg bg-slate-300 drop-shadow">
               <p className="my-5 mx-3  text-slate-800 text-justify text-base">
                 {movie.overview}
               </p>

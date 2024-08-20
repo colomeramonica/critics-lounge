@@ -1,12 +1,14 @@
+import React from "react";
+
 export default function Comments() {
   return (
-    <div className="flex flex-col w-full p-5">
+    <div className="flex flex-col w-full p-5 ">
       <h3 className="text-slate-800 font-bold capitalize pb-[10px] text-start text-xl">
         Reviews
       </h3>
       <div className="add-comment-section flex flex-col">
         <input type="text"
-          className="w-full p-3 rounded-lg bg-slate-200 drop-shadow focus:border-slate-800"
+          className="backdrop-filter backdrop-blur-lg bg-opacity-20 w-full p-3 rounded-lg bg-slate-200 drop-shadow focus:border-slate-800"
           placeholder="Write a review..." />
         <div className="flex justify-end">
           <button className="flex w-20 p-3 rounded-full bg-slate-800 font-bold drop-shadow mt-3 justify-center align-middle">
@@ -15,7 +17,7 @@ export default function Comments() {
         </div>
       </div>
       <div className="comments-section flex flex-col my-6">
-        <div className="w-full p-3 rounded-lg bg-slate-200 drop-shadow">
+        <div className="backdrop-filter backdrop-blur-lg bg-opacity-20 w-full p-3 rounded-lg bg-slate-200 drop-shadow">
           <h2 className="px-2 text-slate-800 font-bold capitalize text-start text-xl">
             Título Resenha
           </h2>

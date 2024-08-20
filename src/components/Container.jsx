@@ -25,7 +25,7 @@ const Container = ({ list }) => {
 
   return (
     <div>
-      <div className="flex flex-row gap-3 bg-white rounded items-center justify-center">
+      <div className="flex flex-row gap-3 backdrop-filter backdrop-blur-lg bg-opacity-20 rounded items-center justify-center">
         {list.slice(start, end).map((item) => (
           <Link to={`/movie/${item.id}`} key={item.id}>
             <Poster
@@ -41,7 +41,6 @@ const Container = ({ list }) => {
           onClick={handleBack}
           disabled={activeStep === 0}
         >
-          Previous
           <svg
             fill="none"
             height={32}
@@ -58,6 +57,7 @@ const Container = ({ list }) => {
         <div >
           {Array.from({ length: totalSteps }, (_, index) => (
             <span
+              className="text-slate-900"
               key={index}
               onClick={() => setActiveStep(index)}>
               {index === activeStep ? '●' : '○'}
@@ -68,7 +68,6 @@ const Container = ({ list }) => {
           onClick={handleNext}
           disabled={activeStep === totalSteps - 1}
         >
-          Next
           <svg
             fill="none"
             height={32}
