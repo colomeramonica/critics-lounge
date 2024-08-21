@@ -5,9 +5,7 @@ import { fetchAiringToday, fetchMovieReleases, fetchPopularMovies, fetchPopularT
 
 export default function HomePage() {
   const [movieReleases, setMovieReleases] = useState([]);
-  const [popularMovies, setPopularMovies] = useState([]);
   const [airingToday, setAiringToday] = useState([]);
-  const [popularTv, setPopularTv] = useState([]);
 
   useEffect(() => {
     console.log('useEffect triggered');
@@ -34,11 +32,11 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex flex-row h-full">
-      <div className="flex w-1/2">
+    <div className="flex lg:flex-row flex-col h-full">
+      <div className="flex lg:w-1/2">
         <NavBar />
       </div>
-      <div className="flex flex-col p-5 mx-20 justify-start items-start">
+      <div className="flex lg:flex-row flex-col gap-3 lg:justify-start justify-center align-top p-7 sm:mx-20">
         {movieReleases && movieReleases.length > 0 && (
           <ShowcaseContainer media="movie" list={movieReleases} title="Filmes recentes" />
         )}
