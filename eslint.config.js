@@ -11,6 +11,7 @@ export default [
     rules: {
       'no-unused-vars': 'error',
       'no-undef': 'error',
+      'react/prop-types': 0,
     },
   },
   pluginJs.configs.recommended,

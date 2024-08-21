@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { getIcon } from './Icons';
 
 function TextInput(props) {
@@ -13,5 +14,12 @@ function TextInput(props) {
     </div>
   );
 }
+
+TextInput.propTypes = {
+  type: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+};
 
 export default TextInput;

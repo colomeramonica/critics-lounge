@@ -19,7 +19,7 @@
     "@eartho/one-client-react": "^2.1.0",
     "@eartho/one-server-node": "^1.0.3",
     "axios": "^1.7.3",
-    "framer-motion": "^11.3.19",
+    "framer-motion": "^11.3.28",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1"
