@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import ItemPage from './pages/Item';
 import HomePage from './pages/Home';
+import LoadingPage from './pages/Loading';
 
 function App() {
 	const onRedirectCallback = (appState) => {
@@ -24,7 +25,7 @@ function App() {
 				redirect_uri: typeof window !== 'undefined' && window.location.origin,
 			}}
 			defaultLoginPath="/"
-			loadingComponent={<div>Loading...</div>}
+			loadingComponent={<LoadingPage />}
 		>
 			<Router>
 				<AppRoutes />
@@ -38,6 +39,7 @@ function AppRoutes() {
 		<Routes>
 			<Route exact path="/" element={<HomePage />} />
 			<Route path="/movie/:movieId" element={<ItemPage />} />
+			<Route path="/tv/:tvId" element={<ItemPage />} />
 			<Route path="/login" element={<SignUp />} />
 		</Routes>
 	);
